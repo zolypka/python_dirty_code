@@ -1,15 +1,15 @@
-import module1
-import module2
+import greetings
+import calculations
 
-module1.greet()
-name = module1.get_name()
+greetings.greet()
+name = greetings.get_name()
 print(f"Привет, {name}!")
 
 filename = "sample.txt"
-word_count = module2.count_words(filename)
-sentence_count = module2.count_sentences(filename)
-top_words = module2.count_word_frequency(filename)
-vovels_and_consonant= module2.count_vowels_and_consonants(filename)
+word_count = calculations.count_words(filename)
+sentence_count = calculations.count_sentences(filename)
+top_words = calculations.count_word_frequency(filename)
+vovels_and_consonant= calculations.count_vowels_and_consonants(filename)
 
 print(f"Количество слов в файле: {word_count}")
 print(f"Количество предложений в файле: {sentence_count}")
